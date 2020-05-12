@@ -1,0 +1,43 @@
+{
+	"folders": [
+		{
+			"path": "HTTP SERVER"
+		},
+		{
+			"path": "FS-2"
+		},
+		{
+			"path": "Eventemitter"
+		},
+		{
+			"path": "FS"
+		},
+		{
+			"path": "PArt-1"
+		},
+		{
+			"path": "Nodeman"
+		},
+		{
+			"path": "User input"
+		},
+		{
+			"path": "yargs"
+		},
+		{
+			"path": "Weather-app"
+		},
+		{
+			"path": "node-web-server"
+		},
+		{
+			"path": "hostel Management"
+		},
+		{
+			"path": "node-tests"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

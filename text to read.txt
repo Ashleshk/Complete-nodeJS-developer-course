@@ -1,0 +1,37 @@
+
+I:\PROGRAM\Node.js>node app.js
+{ log: [Function: log] }
+
+I:\PROGRAM\Node.js>node app.js
+{ log: [Function: log] }
+messgae
+
+I:\PROGRAM\Node.js>node app.js
+I:\PROGRAM\Node.js\logger.js
+I:\PROGRAM\Node.js
+{ log: [Function: log] }
+messgae
+
+I:\PROGRAM\Node.js>node app.js
+I:\PROGRAM\Node.js\logger.js
+I:\PROGRAM\Node.js
+{ log: [Function: log] }
+messgae
+{ root: 'I:\\',
+  dir: 'I:\\PROGRAM\\Node.js',
+  base: 'app.js',
+  ext: '.js',
+  name: 'app' }
+
+I:\PROGRAM\Node.js>node app.js
+I:\PROGRAM\Node.js\logger.js
+I:\PROGRAM\Node.js
+{ log: [Function: log] }
+messgae
+{ root: 'I:\\',
+  dir: 'I:\\PROGRAM\\Node.js',
+  base: 'app.js',
+  ext: '.js',
+  name: 'app' }
+8441929728
+2923745280

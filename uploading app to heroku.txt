@@ -1,0 +1,125 @@
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   package.json
+        modified:   server.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git add .
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   package.json
+        modified:   server.js
+
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git commit -m 'Setup start Scripy and heruku port'
+[master 64d6bf0] Setup start Scripy and heruku port
+ 2 files changed, 7 insertions(+), 3 deletions(-)
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 596 bytes | 596.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Ashleshk/node-course-2-web-server.git
+   22e4a48..64d6bf0  master -> master
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ heruko create
+bash: heruko: command not found
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ heroko create
+bash: heroko: command not found
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ heroku create
+Creating app... done, stormy-journey-30361
+https://stormy-journey-30361.herokuapp.com/ | https://git.heroku.com/stormy-journey-30361.git
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git push heroku
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (18/18), 2.87 KiB | 733.00 KiB/s, done.
+Total 18 (delta 5), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Node.js app detected
+remote:
+remote: -----> Creating runtime environment
+remote:
+remote:        NPM_CONFIG_LOGLEVEL=error
+remote:        NODE_ENV=production
+remote:        NODE_MODULES_CACHE=true
+remote:        NODE_VERBOSE=false
+remote:
+remote: -----> Installing binaries
+remote:        engines.node (package.json):  unspecified
+remote:        engines.npm (package.json):   unspecified (use default)
+remote:
+remote:        Resolving node version 8.x...
+remote:        Downloading and installing node 8.12.0...
+remote:        Using default npm version: 6.4.1
+remote:
+remote: -----> Building dependencies
+remote:        Installing node modules (package.json)
+remote:        added 77 packages from 111 contributors and audited 151 packages in 3.138s
+remote:        found 0 vulnerabilities
+remote:
+remote:
+remote: -----> Caching build
+remote:        - node_modules
+remote:
+remote: -----> Pruning devDependencies
+remote:        audited 151 packages in 1.311s
+remote:        found 0 vulnerabilities
+remote:
+remote:
+remote: -----> Build succeeded!
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 18M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://stormy-journey-30361.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/stormy-journey-30361.git
+ * [new branch]      master -> master
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ ^C
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ heroku open
+

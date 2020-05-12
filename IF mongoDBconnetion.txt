@@ -1,0 +1,278 @@
+Microsoft Windows [Version 10.0.17134.285]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\lenovo>"C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath="c:\data\db"
+2018-10-02T06:33:14.537+0530 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2018-10-02T06:33:14.992+0530 I CONTROL  [initandlisten] MongoDB starting : pid=13096 port=27017 dbpath=c:\data\db 64-bit host=DESKTOP-27NLM5S
+2018-10-02T06:33:14.992+0530 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2018-10-02T06:33:14.993+0530 I CONTROL  [initandlisten] db version v4.0.2
+2018-10-02T06:33:14.993+0530 I CONTROL  [initandlisten] git version: fc1573ba18aee42f97a3bb13b67af7d837826b47
+2018-10-02T06:33:14.993+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-10-02T06:33:14.993+0530 I CONTROL  [initandlisten] modules: none
+2018-10-02T06:33:14.993+0530 I CONTROL  [initandlisten] build environment:
+2018-10-02T06:33:14.993+0530 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2018-10-02T06:33:14.993+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-10-02T06:33:14.993+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-10-02T06:33:14.993+0530 I CONTROL  [initandlisten] options: { storage: { dbPath: "c:\data\db" } }
+2018-10-02T06:33:15.137+0530 W STORAGE  [initandlisten] Detected unclean shutdown - c:\data\db\mongod.lock is not empty.
+2018-10-02T06:33:15.254+0530 I STORAGE  [initandlisten] Detected data files in c:\data\db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-10-02T06:33:15.254+0530 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2018-10-02T06:33:15.255+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3513M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-10-02T06:33:17.598+0530 I STORAGE  [initandlisten] WiredTiger message [1538442197:598707][13096:140721999002704], txn-recover: Main recovery loop: starting at 2/5376
+2018-10-02T06:33:17.674+0530 I STORAGE  [initandlisten] WiredTiger message [1538442197:674630][13096:140721999002704], txn-recover: Recovering log 2 through 3
+2018-10-02T06:33:17.867+0530 I STORAGE  [initandlisten] WiredTiger message [1538442197:866988][13096:140721999002704], txn-recover: Recovering log 3 through 3
+2018-10-02T06:33:17.950+0530 I STORAGE  [initandlisten] WiredTiger message [1538442197:949767][13096:140721999002704], txn-recover: Set global recovery timestamp: 0
+2018-10-02T06:33:19.068+0530 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-10-02T06:33:20.089+0530 I CONTROL  [initandlisten]
+2018-10-02T06:33:20.089+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-10-02T06:33:20.089+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-10-02T06:33:20.089+0530 I CONTROL  [initandlisten]
+2018-10-02T06:33:20.090+0530 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-10-02T06:33:20.090+0530 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server.
+2018-10-02T06:33:20.090+0530 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP
+2018-10-02T06:33:20.090+0530 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-10-02T06:33:20.090+0530 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-10-02T06:33:20.090+0530 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-10-02T06:33:20.091+0530 I CONTROL  [initandlisten]
+2018-10-02T06:33:23.326+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'c:/data/db/diagnostic.data'
+2018-10-02T06:33:23.331+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-10-02T06:33:25.471+0530 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2018-10-02T06:33:47.877+0530 I CONTROL  [thread1] Ctrl-C signal
+2018-10-02T06:33:47.877+0530 I CONTROL  [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+2018-10-02T06:33:47.967+0530 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2018-10-02T06:33:48.139+0530 I CONTROL  [consoleTerminate] Shutting down free monitoring
+2018-10-02T06:33:48.201+0530 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2018-10-02T06:33:48.217+0530 I STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2018-10-02T06:33:49.124+0530 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2018-10-02T06:33:49.124+0530 I CONTROL  [consoleTerminate] now exiting
+2018-10-02T06:33:49.124+0530 I CONTROL  [consoleTerminate] shutting down with code:12
+
+C:\Users\lenovo>
+C:\Users\lenovo>
+C:\Users\lenovo>
+C:\Users\lenovo>
+C:\Users\lenovo>"C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath="c:\data\db"
+2018-10-02T06:33:50.442+0530 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2018-10-02T06:33:50.818+0530 I CONTROL  [initandlisten] MongoDB starting : pid=12680 port=27017 dbpath=c:\data\db 64-bit host=DESKTOP-27NLM5S
+2018-10-02T06:33:50.818+0530 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2018-10-02T06:33:50.820+0530 I CONTROL  [initandlisten] db version v4.0.2
+2018-10-02T06:33:50.823+0530 I CONTROL  [initandlisten] git version: fc1573ba18aee42f97a3bb13b67af7d837826b47
+2018-10-02T06:33:50.824+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-10-02T06:33:50.825+0530 I CONTROL  [initandlisten] modules: none
+2018-10-02T06:33:50.826+0530 I CONTROL  [initandlisten] build environment:
+2018-10-02T06:33:50.827+0530 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2018-10-02T06:33:50.828+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-10-02T06:33:50.828+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-10-02T06:33:50.829+0530 I CONTROL  [initandlisten] options: { storage: { dbPath: "c:\data\db" } }
+2018-10-02T06:33:50.832+0530 I STORAGE  [initandlisten] Detected data files in c:\data\db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-10-02T06:33:50.834+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3513M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-10-02T06:33:51.269+0530 I STORAGE  [initandlisten] WiredTiger message [1538442231:269189][12680:140721999002704], txn-recover: Main recovery loop: starting at 3/5760
+2018-10-02T06:33:51.418+0530 I STORAGE  [initandlisten] WiredTiger message [1538442231:417760][12680:140721999002704], txn-recover: Recovering log 3 through 4
+2018-10-02T06:33:51.618+0530 I STORAGE  [initandlisten] WiredTiger message [1538442231:618010][12680:140721999002704], txn-recover: Recovering log 4 through 4
+2018-10-02T06:33:51.702+0530 I STORAGE  [initandlisten] WiredTiger message [1538442231:701761][12680:140721999002704], txn-recover: Set global recovery timestamp: 0
+2018-10-02T06:33:52.189+0530 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-10-02T06:33:52.679+0530 I CONTROL  [initandlisten]
+2018-10-02T06:33:52.679+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-10-02T06:33:52.680+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-10-02T06:33:52.684+0530 I CONTROL  [initandlisten]
+2018-10-02T06:33:52.684+0530 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-10-02T06:33:52.685+0530 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server.
+2018-10-02T06:33:52.685+0530 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP
+2018-10-02T06:33:52.685+0530 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-10-02T06:33:52.686+0530 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-10-02T06:33:52.686+0530 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-10-02T06:33:52.687+0530 I CONTROL  [initandlisten]
+2018-10-02T06:33:53.076+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'c:/data/db/diagnostic.data'
+2018-10-02T06:33:53.081+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-10-02T06:35:53.600+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:50417 #1 (1 connection now open)
+2018-10-02T06:35:53.675+0530 I NETWORK  [conn1] received client metadata from 127.0.0.1:50417 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.2" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 17134)" } }
+2018-10-02T06:38:53.658+0530 I WRITE    [LogicalSessionCacheRefresh] update config.system.sessions command: { q: { _id: { id: UUID("891d6697-8f44-41f7-b4e0-e74cae06ffb3"), uid: BinData(0, E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) } }, u: { $currentDate: { lastUse: true } }, multi: false, upsert: true } planSummary: IDHACK keysExamined:0 docsExamined:0 nMatched:0 nModified:0 upsert:1 keysInserted:2 numYields:1 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } 471ms
+2018-10-02T06:38:53.716+0530 I COMMAND  [LogicalSessionCacheRefresh] command config.$cmd command: update { update: "system.sessions", ordered: false, allowImplicitCollectionCreation: false, writeConcern: { w: "majority", wtimeout: 15000 }, $db: "config" } numYields:0 reslen:171 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_msg 555ms
+2018-10-02T06:39:06.951+0530 I STORAGE  [conn1] createCollection: test.Todos with generated UUID: fd0dd72e-9c04-4d0b-81c4-dbfc967775b9
+2018-10-02T06:39:07.176+0530 I COMMAND  [conn1] command test.Todos appName: "MongoDB Shell" command: insert { insert: "Todos", ordered: true, lsid: { id: UUID("891d6697-8f44-41f7-b4e0-e74cae06ffb3") }, $db: "test" } ninserted:1 keysInserted:1 numYields:0 reslen:45 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_msg 234ms
+2018-10-02T06:43:54.024+0530 I WRITE    [LogicalSessionCacheRefresh] update config.system.sessions command: { q: { _id: { id: UUID("891d6697-8f44-41f7-b4e0-e74cae06ffb3"), uid: BinData(0, E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) } }, u: { $currentDate: { lastUse: true } }, multi: false, upsert: true } planSummary: IDHACK keysExamined:1 docsExamined:1 nMatched:1 nModified:1 keysInserted:1 keysDeleted:1 numYields:1 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } 941ms
+2018-10-02T06:43:54.024+0530 I COMMAND  [LogicalSessionCacheRefresh] command config.$cmd command: update { update: "system.sessions", ordered: false, allowImplicitCollectionCreation: false, writeConcern: { w: "majority", wtimeout: 15000 }, $db: "config" } numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_msg 942ms
+2018-10-02T08:42:20.609+0530 I NETWORK  [conn1] end connection 127.0.0.1:50417 (0 connections now open)
+2018-10-02T08:43:22.496+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51549 #2 (1 connection now open)
+2018-10-02T08:43:22.498+0530 I NETWORK  [conn2] received client metadata from 127.0.0.1:51549 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.2" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 17134)" } }
+2018-10-02T08:43:26.261+0530 I NETWORK  [conn2] end connection 127.0.0.1:51549 (0 connections now open)
+2018-10-02T08:43:33.414+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51553 #3 (1 connection now open)
+2018-10-02T08:43:33.416+0530 I NETWORK  [conn3] received client metadata from 127.0.0.1:51553 conn3: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.2" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 17134)" } }
+2018-10-02T08:43:57.400+0530 I NETWORK  [conn3] end connection 127.0.0.1:51553 (0 connections now open)
+2018-10-02T08:46:32.529+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51599 #4 (1 connection now open)
+2018-10-02T08:49:06.346+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51635 #5 (2 connections now open)
+2018-10-02T08:49:06.346+0530 I NETWORK  [conn4] end connection 127.0.0.1:51599 (1 connection now open)
+2018-10-02T08:49:06.347+0530 I NETWORK  [conn5] received client metadata from 127.0.0.1:51635 conn5: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.2" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 17134)" } }
+2018-10-02T08:49:38.953+0530 I NETWORK  [conn5] end connection 127.0.0.1:51635 (0 connections now open)
+2018-10-02T08:52:01.785+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51685 #6 (1 connection now open)
+2018-10-02T08:52:01.786+0530 I NETWORK  [conn6] received client metadata from 127.0.0.1:51685 conn6: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.2" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 17134)" } }
+2018-10-02T08:52:14.084+0530 I NETWORK  [conn6] end connection 127.0.0.1:51685 (0 connections now open)
+2018-10-02T08:58:12.088+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51816 #7 (1 connection now open)
+2018-10-02T08:58:12.101+0530 I NETWORK  [conn7] received client metadata from 127.0.0.1:51816 conn7: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T08:58:12.764+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51817 #8 (2 connections now open)
+2018-10-02T08:58:12.765+0530 I NETWORK  [conn8] received client metadata from 127.0.0.1:51817 conn8: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T08:58:33.391+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51823 #9 (3 connections now open)
+2018-10-02T08:58:33.402+0530 I NETWORK  [conn9] received client metadata from 127.0.0.1:51823 conn9: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T08:58:33.436+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:51824 #10 (4 connections now open)
+2018-10-02T08:58:33.437+0530 I NETWORK  [conn10] received client metadata from 127.0.0.1:51824 conn10: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T09:15:31.518+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52205 #11 (5 connections now open)
+2018-10-02T09:15:31.531+0530 I NETWORK  [conn11] end connection 127.0.0.1:52205 (4 connections now open)
+2018-10-02T09:23:13.843+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52339 #12 (5 connections now open)
+2018-10-02T09:23:13.859+0530 I STORAGE  [conn12] createCollection: TodoApp.Todos with generated UUID: a09c9961-7b89-4e82-8e3f-8ef25e8935c6
+2018-10-02T09:23:14.110+0530 I COMMAND  [conn12] command TodoApp.Todos command: insert { insert: "Todos", ordered: true, $db: "TodoApp" } ninserted:1 keysInserted:1 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 250ms
+2018-10-02T09:23:14.114+0530 I NETWORK  [conn12] end connection 127.0.0.1:52339 (4 connections now open)
+2018-10-02T09:25:06.953+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52372 #13 (5 connections now open)
+2018-10-02T09:25:06.972+0530 I NETWORK  [conn13] end connection 127.0.0.1:52372 (4 connections now open)
+2018-10-02T09:26:10.303+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52390 #14 (5 connections now open)
+2018-10-02T09:26:10.305+0530 I NETWORK  [conn14] received client metadata from 127.0.0.1:52390 conn14: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T09:26:10.361+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52391 #15 (6 connections now open)
+2018-10-02T09:26:10.363+0530 I NETWORK  [conn15] received client metadata from 127.0.0.1:52391 conn15: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T09:30:09.782+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52466 #16 (7 connections now open)
+2018-10-02T09:30:09.797+0530 I STORAGE  [conn16] createCollection: TodoApp.Users with generated UUID: b9f12aad-f1e1-44bb-972d-9f1ae5ce0d14
+2018-10-02T09:30:10.035+0530 I COMMAND  [conn16] command TodoApp.Users command: insert { insert: "Users", ordered: true, $db: "TodoApp" } ninserted:1 keysInserted:1 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 238ms
+2018-10-02T09:30:10.043+0530 I NETWORK  [conn16] end connection 127.0.0.1:52466 (6 connections now open)
+2018-10-02T09:30:40.296+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52474 #17 (7 connections now open)
+2018-10-02T09:30:40.297+0530 I NETWORK  [conn17] received client metadata from 127.0.0.1:52474 conn17: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T09:30:40.344+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52475 #18 (8 connections now open)
+2018-10-02T09:30:40.355+0530 I NETWORK  [conn18] received client metadata from 127.0.0.1:52475 conn18: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T09:39:15.397+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52619 #19 (9 connections now open)
+2018-10-02T09:39:15.416+0530 I NETWORK  [conn19] end connection 127.0.0.1:52619 (8 connections now open)
+2018-10-02T09:44:26.491+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52704 #20 (9 connections now open)
+2018-10-02T09:44:26.523+0530 I NETWORK  [conn20] end connection 127.0.0.1:52704 (8 connections now open)
+2018-10-02T09:50:16.859+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52807 #21 (9 connections now open)
+2018-10-02T09:50:16.874+0530 I NETWORK  [conn21] end connection 127.0.0.1:52807 (8 connections now open)
+2018-10-02T09:53:55.612+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52876 #22 (9 connections now open)
+2018-10-02T09:53:55.626+0530 I NETWORK  [conn22] end connection 127.0.0.1:52876 (8 connections now open)
+2018-10-02T09:56:21.007+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52918 #23 (9 connections now open)
+2018-10-02T09:56:21.009+0530 I NETWORK  [conn23] received client metadata from 127.0.0.1:52918 conn23: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T09:56:21.056+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:52919 #24 (10 connections now open)
+2018-10-02T09:56:21.060+0530 I NETWORK  [conn24] received client metadata from 127.0.0.1:52919 conn24: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T09:56:22.864+0530 I NETWORK  [conn14] end connection 127.0.0.1:52390 (9 connections now open)
+2018-10-02T09:56:22.928+0530 I NETWORK  [conn15] end connection 127.0.0.1:52391 (8 connections now open)
+2018-10-02T09:56:24.379+0530 I NETWORK  [conn17] end connection 127.0.0.1:52474 (7 connections now open)
+2018-10-02T09:56:24.381+0530 I NETWORK  [conn18] end connection 127.0.0.1:52475 (6 connections now open)
+2018-10-02T09:56:25.740+0530 I NETWORK  [conn9] end connection 127.0.0.1:51823 (5 connections now open)
+2018-10-02T09:56:25.744+0530 I NETWORK  [conn10] end connection 127.0.0.1:51824 (4 connections now open)
+2018-10-02T10:02:29.075+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53027 #25 (5 connections now open)
+2018-10-02T10:03:31.239+0530 I NETWORK  [conn25] end connection 127.0.0.1:53027 (4 connections now open)
+2018-10-02T10:03:34.950+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53045 #26 (5 connections now open)
+2018-10-02T10:14:28.458+0530 I NETWORK  [conn26] end connection 127.0.0.1:53045 (4 connections now open)
+2018-10-02T10:14:33.051+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53238 #27 (5 connections now open)
+2018-10-02T10:15:33.775+0530 I NETWORK  [conn27] end connection 127.0.0.1:53238 (4 connections now open)
+2018-10-02T10:18:59.255+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53320 #28 (5 connections now open)
+2018-10-02T10:19:31.161+0530 I NETWORK  [conn28] end connection 127.0.0.1:53320 (4 connections now open)
+2018-10-02T10:19:33.812+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53331 #29 (5 connections now open)
+2018-10-02T10:24:35.685+0530 I NETWORK  [conn29] end connection 127.0.0.1:53331 (4 connections now open)
+2018-10-02T10:24:39.003+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53434 #30 (5 connections now open)
+2018-10-02T10:26:31.217+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53466 #31 (6 connections now open)
+2018-10-02T10:26:31.220+0530 I NETWORK  [conn31] received client metadata from 127.0.0.1:53466 conn31: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T10:26:31.273+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53467 #32 (7 connections now open)
+2018-10-02T10:26:31.279+0530 I NETWORK  [conn32] received client metadata from 127.0.0.1:53467 conn32: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T10:30:07.740+0530 I NETWORK  [conn30] end connection 127.0.0.1:53434 (6 connections now open)
+2018-10-02T10:30:10.485+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53533 #33 (7 connections now open)
+2018-10-02T10:30:29.413+0530 I NETWORK  [conn33] end connection 127.0.0.1:53533 (6 connections now open)
+2018-10-02T10:30:31.062+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53541 #34 (7 connections now open)
+2018-10-02T10:34:05.949+0530 I NETWORK  [conn23] end connection 127.0.0.1:52918 (6 connections now open)
+2018-10-02T10:34:05.951+0530 I NETWORK  [conn24] end connection 127.0.0.1:52919 (5 connections now open)
+2018-10-02T10:34:41.263+0530 I NETWORK  [conn34] end connection 127.0.0.1:53541 (4 connections now open)
+2018-10-02T10:51:48.142+0530 I NETWORK  [conn31] end connection 127.0.0.1:53466 (3 connections now open)
+2018-10-02T10:51:48.144+0530 I NETWORK  [conn32] end connection 127.0.0.1:53467 (2 connections now open)
+2018-10-02T10:51:51.419+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54079 #35 (3 connections now open)
+2018-10-02T10:51:51.421+0530 I NETWORK  [conn35] received client metadata from 127.0.0.1:54079 conn35: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T10:51:51.471+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54080 #36 (4 connections now open)
+2018-10-02T10:51:51.473+0530 I NETWORK  [conn36] received client metadata from 127.0.0.1:54080 conn36: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T10:56:47.143+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54183 #37 (5 connections now open)
+2018-10-02T10:57:28.375+0530 I NETWORK  [conn37] end connection 127.0.0.1:54183 (4 connections now open)
+2018-10-02T10:57:31.322+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54196 #38 (5 connections now open)
+2018-10-02T10:58:26.662+0530 I NETWORK  [conn38] end connection 127.0.0.1:54196 (4 connections now open)
+2018-10-02T10:58:30.044+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54218 #39 (5 connections now open)
+2018-10-02T10:59:18.338+0530 I NETWORK  [conn35] end connection 127.0.0.1:54079 (4 connections now open)
+2018-10-02T10:59:18.340+0530 I NETWORK  [conn36] end connection 127.0.0.1:54080 (3 connections now open)
+2018-10-02T10:59:26.882+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54238 #40 (4 connections now open)
+2018-10-02T10:59:26.884+0530 I NETWORK  [conn40] received client metadata from 127.0.0.1:54238 conn40: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T10:59:26.943+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54239 #41 (5 connections now open)
+2018-10-02T10:59:26.945+0530 I NETWORK  [conn41] received client metadata from 127.0.0.1:54239 conn41: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T11:01:24.239+0530 I NETWORK  [conn39] end connection 127.0.0.1:54218 (4 connections now open)
+2018-10-02T11:02:28.642+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54296 #42 (5 connections now open)
+2018-10-02T11:02:38.611+0530 I NETWORK  [conn40] end connection 127.0.0.1:54238 (4 connections now open)
+2018-10-02T11:02:38.613+0530 I NETWORK  [conn41] end connection 127.0.0.1:54239 (3 connections now open)
+2018-10-02T11:02:41.428+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54302 #43 (4 connections now open)
+2018-10-02T11:02:41.430+0530 I NETWORK  [conn43] received client metadata from 127.0.0.1:54302 conn43: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T11:02:41.482+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54303 #44 (5 connections now open)
+2018-10-02T11:02:41.485+0530 I NETWORK  [conn44] received client metadata from 127.0.0.1:54303 conn44: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T11:06:25.557+0530 I NETWORK  [conn42] end connection 127.0.0.1:54296 (4 connections now open)
+2018-10-02T11:06:27.466+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54389 #45 (5 connections now open)
+2018-10-02T11:10:51.566+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54471 #46 (6 connections now open)
+2018-10-02T11:10:51.568+0530 I NETWORK  [conn46] received client metadata from 127.0.0.1:54471 conn46: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T11:10:51.618+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54472 #47 (7 connections now open)
+2018-10-02T11:10:51.619+0530 I NETWORK  [conn47] received client metadata from 127.0.0.1:54472 conn47: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T11:15:19.651+0530 I NETWORK  [conn45] end connection 127.0.0.1:54389 (6 connections now open)
+2018-10-02T11:15:21.740+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54563 #48 (7 connections now open)
+2018-10-02T11:15:21.759+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54564 #49 (8 connections now open)
+2018-10-02T11:15:26.754+0530 I NETWORK  [conn49] received client metadata from 127.0.0.1:54564 conn49: { driver: { name: "nodejs", version: "2.2.5" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.17134" }, platform: "Node.js v10.10.0, LE, mongodb-core: 2.0.7" }
+2018-10-02T11:15:51.763+0530 I NETWORK  [conn48] end connection 127.0.0.1:54563 (7 connections now open)
+2018-10-02T11:16:07.581+0530 I NETWORK  [conn49] end connection 127.0.0.1:54564 (6 connections now open)
+2018-10-02T11:16:09.257+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54579 #50 (7 connections now open)
+2018-10-02T11:16:09.276+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54580 #51 (8 connections now open)
+2018-10-02T11:16:14.269+0530 I NETWORK  [conn51] received client metadata from 127.0.0.1:54580 conn51: { driver: { name: "nodejs", version: "2.2.5" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.17134" }, platform: "Node.js v10.10.0, LE, mongodb-core: 2.0.7" }
+2018-10-02T11:16:34.068+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54590 #52 (9 connections now open)
+2018-10-02T11:16:34.070+0530 I NETWORK  [conn52] received client metadata from 127.0.0.1:54590 conn52: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T11:16:34.126+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54591 #53 (10 connections now open)
+2018-10-02T11:16:34.130+0530 I NETWORK  [conn53] received client metadata from 127.0.0.1:54591 conn53: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T11:16:39.277+0530 I NETWORK  [conn50] end connection 127.0.0.1:54579 (9 connections now open)
+2018-10-02T11:16:42.728+0530 I NETWORK  [conn52] end connection 127.0.0.1:54590 (8 connections now open)
+2018-10-02T11:16:42.729+0530 I NETWORK  [conn53] end connection 127.0.0.1:54591 (7 connections now open)
+2018-10-02T11:16:53.367+0530 I NETWORK  [conn46] end connection 127.0.0.1:54471 (6 connections now open)
+2018-10-02T11:16:53.369+0530 I NETWORK  [conn47] end connection 127.0.0.1:54472 (5 connections now open)
+2018-10-02T11:16:59.494+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54598 #54 (6 connections now open)
+2018-10-02T11:16:59.496+0530 I NETWORK  [conn54] received client metadata from 127.0.0.1:54598 conn54: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T11:16:59.547+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54599 #55 (7 connections now open)
+2018-10-02T11:16:59.549+0530 I NETWORK  [conn55] received client metadata from 127.0.0.1:54599 conn55: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T11:17:33.524+0530 I NETWORK  [conn51] end connection 127.0.0.1:54580 (6 connections now open)
+2018-10-02T11:29:05.701+0530 I NETWORK  [conn43] end connection 127.0.0.1:54302 (5 connections now open)
+2018-10-02T11:29:05.703+0530 I NETWORK  [conn44] end connection 127.0.0.1:54303 (4 connections now open)
+2018-10-02T11:29:11.703+0530 I NETWORK  [conn54] end connection 127.0.0.1:54598 (3 connections now open)
+2018-10-02T11:29:11.705+0530 I NETWORK  [conn55] end connection 127.0.0.1:54599 (2 connections now open)
+2018-10-02T11:52:36.068+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55397 #56 (3 connections now open)
+2018-10-02T11:52:36.070+0530 I NETWORK  [conn56] received client metadata from 127.0.0.1:55397 conn56: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T11:52:36.131+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55398 #57 (4 connections now open)
+2018-10-02T11:52:36.134+0530 I NETWORK  [conn57] received client metadata from 127.0.0.1:55398 conn57: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T11:59:07.024+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55495 #58 (5 connections now open)
+2018-10-02T11:59:29.343+0530 I NETWORK  [conn56] end connection 127.0.0.1:55397 (4 connections now open)
+2018-10-02T11:59:29.344+0530 I NETWORK  [conn57] end connection 127.0.0.1:55398 (3 connections now open)
+2018-10-02T11:59:35.704+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55503 #59 (4 connections now open)
+2018-10-02T11:59:35.707+0530 I NETWORK  [conn59] received client metadata from 127.0.0.1:55503 conn59: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T11:59:35.762+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55504 #60 (5 connections now open)
+2018-10-02T11:59:35.764+0530 I NETWORK  [conn60] received client metadata from 127.0.0.1:55504 conn60: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T12:00:20.818+0530 I NETWORK  [conn58] end connection 127.0.0.1:55495 (4 connections now open)
+2018-10-02T12:00:22.745+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55516 #61 (5 connections now open)
+2018-10-02T12:00:44.992+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55523 #62 (6 connections now open)
+2018-10-02T12:00:44.994+0530 I NETWORK  [conn62] received client metadata from 127.0.0.1:55523 conn62: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T12:00:45.049+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55524 #63 (7 connections now open)
+2018-10-02T12:00:45.051+0530 I NETWORK  [conn63] received client metadata from 127.0.0.1:55524 conn63: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T12:00:50.111+0530 I NETWORK  [conn59] end connection 127.0.0.1:55503 (6 connections now open)
+2018-10-02T12:00:50.112+0530 I NETWORK  [conn60] end connection 127.0.0.1:55504 (5 connections now open)
+2018-10-02T12:09:03.045+0530 I NETWORK  [conn62] end connection 127.0.0.1:55523 (4 connections now open)
+2018-10-02T12:09:03.046+0530 I NETWORK  [conn63] end connection 127.0.0.1:55524 (3 connections now open)
+2018-10-02T12:09:05.295+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55668 #64 (4 connections now open)
+2018-10-02T12:09:05.297+0530 I NETWORK  [conn64] received client metadata from 127.0.0.1:55668 conn64: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T12:09:05.350+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55669 #65 (5 connections now open)
+2018-10-02T12:09:05.352+0530 I NETWORK  [conn65] received client metadata from 127.0.0.1:55669 conn65: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T12:10:29.744+0530 I NETWORK  [conn61] end connection 127.0.0.1:55516 (4 connections now open)
+2018-10-02T12:10:32.224+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55693 #66 (5 connections now open)
+2018-10-02T12:10:32.237+0530 I NETWORK  [conn66] end connection 127.0.0.1:55693 (4 connections now open)
+2018-10-02T12:11:02.951+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55703 #67 (5 connections now open)
+2018-10-02T12:11:02.968+0530 I NETWORK  [conn67] end connection 127.0.0.1:55703 (4 connections now open)
+2018-10-02T12:11:32.464+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55712 #68 (5 connections now open)
+2018-10-02T12:11:32.478+0530 I NETWORK  [conn68] end connection 127.0.0.1:55712 (4 connections now open)
+2018-10-02T12:11:47.599+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55717 #69 (5 connections now open)
+2018-10-02T12:11:47.612+0530 I NETWORK  [conn69] end connection 127.0.0.1:55717 (4 connections now open)
+2018-10-02T12:12:51.535+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55735 #70 (5 connections now open)
+2018-10-02T12:12:51.549+0530 I NETWORK  [conn70] end connection 127.0.0.1:55735 (4 connections now open)
+2018-10-02T12:13:44.840+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55751 #71 (5 connections now open)
+2018-10-02T12:14:09.014+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55759 #72 (6 connections now open)
+2018-10-02T12:14:09.017+0530 I NETWORK  [conn72] received client metadata from 127.0.0.1:55759 conn72: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T12:14:09.068+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55760 #73 (7 connections now open)
+2018-10-02T12:14:09.070+0530 I NETWORK  [conn73] received client metadata from 127.0.0.1:55760 conn73: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2018-10-02T12:14:14.644+0530 I NETWORK  [conn64] end connection 127.0.0.1:55668 (6 connections now open)
+2018-10-02T12:14:14.646+0530 I NETWORK  [conn65] end connection 127.0.0.1:55669 (5 connections now open)

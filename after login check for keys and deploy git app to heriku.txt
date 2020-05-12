@@ -1,0 +1,134 @@
+
+I:\PROGRAM\Node.js\node-web-server>heroku login
+heroku: Enter your login credentials
+Email [ashleshuk@gmail.com]:
+Password: ***********
+Logged in as ashleshuk@gmail.com
+
+I:\PROGRAM\Node.js\node-web-server>heroku keys:add
+Found an SSH public key at C:\Users\lenovo\.ssh\id_rsa.pub
+? Would you like to upload it to Heroku? Yes
+Uploading C:\Users\lenovo\.ssh\id_rsa.pub SSH key... done
+
+I:\PROGRAM\Node.js\node-web-server>heroku keys
+=== ashleshuk@gmail.com keys
+ssh-rsa AAAAB3NzaC...2AgAYq0Q== ashleshuk@gmail.com
+
+I:\PROGRAM\Node.js\node-web-server>ssh -v git@heroku.com
+OpenSSH_for_Windows_7.6p1, LibreSSL 2.6.4
+debug1: Connecting to heroku.com [50.19.85.154] port 22.
+debug1: Connection established.
+debug1: identity file C:\\Users\\lenovo/.ssh/id_rsa type 0
+debug1: key_load_public: No such file or directory
+debug1: identity file C:\\Users\\lenovo/.ssh/id_rsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file C:\\Users\\lenovo/.ssh/id_dsa type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file C:\\Users\\lenovo/.ssh/id_dsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file C:\\Users\\lenovo/.ssh/id_ecdsa type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file C:\\Users\\lenovo/.ssh/id_ecdsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file C:\\Users\\lenovo/.ssh/id_ed25519 type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file C:\\Users\\lenovo/.ssh/id_ed25519-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_for_Windows_7.6
+debug1: Remote protocol version 2.0, remote software version endosome
+debug1: no match: endosome
+debug1: Authenticating to heroku.com:22 as 'git'
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256@libssh.org
+debug1: kex: host key algorithm: ssh-rsa
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ssh-rsa SHA256:8tF0wX2WquK45aGKs/Bh1dKmBXH08vxUe0VCJJWOA/o
+debug1: read_passphrase: can't open /dev/tty: No such file or directory
+The authenticity of host 'heroku.com (50.19.85.154)' can't be established.
+RSA key fingerprint is SHA256:8tF0wX2WquK45aGKs/Bh1dKmBXH08vxUe0VCJJWOA/o.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'heroku.com,50.19.85.154' (RSA) to the list of known hosts.
+debug1: rekey after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey after 134217728 blocks
+debug1: pubkey_prepare: ssh_get_authentication_socket: No such file or directory
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey
+debug1: Next authentication method: publickey
+debug1: Offering public key: RSA SHA256:tW9tK+PxlJDG1yY6CaKPRzsbNJwWNOuTLVsXUpwGjM4 C:\\Users\\lenovo/.ssh/id_rsa
+debug1: Server accepts key: pkalg ssh-rsa blen 535
+debug1: Authentication succeeded (publickey).
+Authenticated to heroku.com ([50.19.85.154]:22).
+debug1: channel 0: new [client-session]
+debug1: Entering interactive session.
+debug1: pledge: network
+debug1: console supports the ansi parsing
+PTY allocation request failed on channel 0
+shell request failed on channel 0
+
+I:\PROGRAM\Node.js\node-web-server>SET
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\lenovo\AppData\Roaming
+CommonProgramFiles=C:\Program Files\Common Files
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+CommonProgramW6432=C:\Program Files\Common Files
+COMPUTERNAME=DESKTOP-27NLM5S
+ComSpec=C:\WINDOWS\system32\cmd.exe
+DriverData=C:\Windows\System32\Drivers\DriverData
+GDAL_DATA=C:\Program Files\PostgreSQL\9.5\gdal-data
+GOOGLE_API_KEY=no
+GOOGLE_DEFAULT_CLIENT_ID=no
+GOOGLE_DEFAULT_CLIENT_SECRET=no
+GTK_BASEPATH=C:\Program Files (x86)\GtkSharp\2.12\
+HOMEDRIVE=C:
+HOMEPATH=\Users\lenovo
+INTEL_DEV_REDIST=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_121
+KMP_DUPLICATE_LIB_OK=TRUE
+LOCALAPPDATA=C:\Users\lenovo\AppData\Local
+LOGONSERVER=\\DESKTOP-27NLM5S
+MIC_LD_LIBRARY_PATH=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\mic
+MKL_SERIAL=YES
+NIDAQmxSwitchDir=C:\Program Files (x86)\National Instruments\NI-DAQ\Switch\
+NIEXTCCOMPILERSUPP=C:\Program Files (x86)\National Instruments\Shared\ExternalCompilerSupport\C\
+NUMBER_OF_PROCESSORS=4
+OneDrive=C:\Users\lenovo\OneDrive
+OS=Windows_NT
+Path=C:\Python\Python37\Scripts\;C:\Python\Python37\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files (x86)\MATLAB\R2007b\bin;C:\Program Files (x86)\MATLAB\R2007b\bin\win32;E:\MPLAB C32 Suite\bin;C:\Program Files (x86)\Microchip\MPLAB C32 Suite\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;"C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_121\bin";C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;C:\Users\lenovo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Python\Python37;C:\Users\lenovo\.dotnet\tools;C:\Users\lenovo\AppData\Roaming\npm;C:\Users\lenovo\AppData\Roaming\npm\node_modules\nodeman\bin;
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+POSTGIS_ENABLE_OUTDB_RASTERS=1
+POSTGIS_GDAL_ENABLED_DRIVERS=GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid
+PROCESSOR_ARCHITECTURE=AMD64
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
+PROCESSOR_LEVEL=6
+PROCESSOR_REVISION=4e03
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+ProgramFiles(x86)=C:\Program Files (x86)
+ProgramW6432=C:\Program Files
+PROMPT=$P$G
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\PowerShell\Modules\
+PUBLIC=C:\Users\Public
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\WINDOWS
+TEMP=C:\Users\lenovo\AppData\Local\Temp
+TMP=C:\Users\lenovo\AppData\Local\Temp
+USERDOMAIN=DESKTOP-27NLM5S
+USERDOMAIN_ROAMINGPROFILE=DESKTOP-27NLM5S
+USERNAME=lenovo
+USERPROFILE=C:\Users\lenovo
+VS100COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\Tools\
+windir=C:\WINDOWS
+
+I:\PROGRAM\Node.js\node-web-server>npm start
+
+> web-server@1.0.0 start I:\PROGRAM\Node.js\node-web-server
+> node server.js
+
+Server is Up on port 3000
+Terminate batch job (Y/N)? y

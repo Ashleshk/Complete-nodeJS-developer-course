@@ -1,0 +1,357 @@
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git --version
+git version 2.19.0.windows.1
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git init
+Reinitialized existing Git repository in I:/PROGRAM/Node.js/node-web-server/.git                 /
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ ls -a
+./   .git/          package.json       public/    server.log
+../  node_modules/  package-lock.json  server.js  views/
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        node_modules/
+        package-lock.json
+        package.json
+        public/
+        server.js
+        server.log
+        views/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git add package.json
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   package.json
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        node_modules/
+        package-lock.json
+        public/
+        server.js
+        server.log
+        views/
+
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git add public/
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git add server.js
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   package.json
+        new file:   public/help.html
+        new file:   server.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        node_modules/
+        package-lock.json
+        server.log
+        views/
+
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git add views/
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   package.json
+        new file:   public/help.html
+        new file:   server.js
+        new file:   views/about.hbs
+        new file:   views/home.hbs
+        new file:   views/maintenance.hbs
+        new file:   views/partials/footer.hbs
+        new file:   views/partials/header.hbs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        node_modules/
+        package-lock.json
+        server.log
+
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   package.json
+        new file:   public/help.html
+        new file:   server.js
+        new file:   views/about.hbs
+        new file:   views/home.hbs
+        new file:   views/maintenance.hbs
+        new file:   views/partials/footer.hbs
+        new file:   views/partials/header.hbs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ giit add .gitignore
+bash: giit: command not found
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   package.json
+        new file:   public/help.html
+        new file:   server.js
+        new file:   views/about.hbs
+        new file:   views/home.hbs
+        new file:   views/maintenance.hbs
+        new file:   views/partials/footer.hbs
+        new file:   views/partials/header.hbs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git add .gitignore
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   package.json
+        new file:   public/help.html
+        new file:   server.js
+        new file:   views/about.hbs
+        new file:   views/home.hbs
+        new file:   views/maintenance.hbs
+        new file:   views/partials/footer.hbs
+        new file:   views/partials/header.hbs
+
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git commit -m 'Inital commit'
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'lenovo@DESKTOP-27NLM5S.(none)')
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   package.json
+        new file:   public/help.html
+        new file:   server.js
+        new file:   views/about.hbs
+        new file:   views/home.hbs
+        new file:   views/maintenance.hbs
+        new file:   views/partials/footer.hbs
+        new file:   views/partials/header.hbs
+
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git commit -m 'Inital Commit'
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'lenovo@DESKTOP-27NLM5S.(none)')
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git config user.email "ashleshuk@gmail.com"
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git config user.name "Ashlesh"
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git commit -m 'Inital Commit'
+[master (root-commit) 22e4a48] Inital Commit
+ 9 files changed, 179 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 package.json
+ create mode 100644 public/help.html
+ create mode 100644 server.js
+ create mode 100644 views/about.hbs
+ create mode 100644 views/home.hbs
+ create mode 100644 views/maintenance.hbs
+ create mode 100644 views/partials/footer.hbs
+ create mode 100644 views/partials/header.hbs
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ ls -al ~/.ssh
+ls: cannot access '/c/Users/lenovo/.ssh': No such file or directory
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ ssh-keygen -t rsa -b 4096 -C 'ashleshuk@gmail.com'
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/lenovo/.ssh/id_rsa):
+Created directory '/c/Users/lenovo/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/lenovo/.ssh/id_rsa.
+Your public key has been saved in /c/Users/lenovo/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:tW9tK+PxlJDG1yY6CaKPRzsbNJwWNOuTLVsXUpwGjM4 ashleshuk@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|        oo.o..   |
+|       ..o..+    |
+|       oo o..    |
+|       oE* + o . |
+|        S = * o o|
+|       +.B = * + |
+|      ..o.  B =  |
+|       o+. .o* . |
+|      ..oo ..oo  |
++----[SHA256]-----+
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ ls -al ~/.ssh
+total 28
+drwxr-xr-x 1 lenovo 197121    0 Sep 24 07:02 ./
+drwxr-xr-x 1 lenovo 197121    0 Sep 24 07:02 ../
+-rw-r--r-- 1 lenovo 197121 3243 Sep 24 07:02 id_rsa
+-rw-r--r-- 1 lenovo 197121  745 Sep 24 07:02 id_rsa.pub
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ eval "$(ssh-agent -s)"
+Agent pid 16224
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ ssh-add ~/.ssh/id_rsa
+Error connecting to agent: Connection timed out
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ ssh-add ~/.ssh/id_rsa
+Error connecting to agent: Connection timed out
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ ssh-add ~/.ssh/id_rsa
+Error connecting to agent: Connection timed out
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/lenovo/.ssh/id_rsa (/c/Users/lenovo/.ssh/id_rsa)
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ clip < ~/.ssh/id_rsa.pub
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ ssh -T git@github.com
+The authenticity of host 'github.com (192.30.253.112)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+Hi Ashleshk! You've successfully authenticated, but GitHub does not provide shell access.
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git remote add origin https://github.com/Ashleshk/node-course-2-web-server.git
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$ git push -u origin master
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (14/14), 2.38 KiB | 610.00 KiB/s, done.
+Total 14 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Ashleshk/node-course-2-web-server/pull/new/master
+remote:
+To https://github.com/Ashleshk/node-course-2-web-server.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+lenovo@DESKTOP-27NLM5S MINGW64 /i/PROGRAM/Node.js/node-web-server (master)
+$
