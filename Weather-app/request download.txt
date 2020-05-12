@@ -1,0 +1,43 @@
+PS I:\PROGRAM\Node.js\weather-app> npm init
+This utility will walk you through creating a package.json file.It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fieldsand exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (weather-app)version: (1.0.0)description:
+entry point: (index.js)test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to I:\PROGRAM\Node.js\weather-app\package.json:
+
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+PS I:\PROGRAM\Node.js\weather-app> npm install request@2.88.0 --save
+
+
+PS I:\PROGRAM\Node.js\weather-app> node app.js
+{ error_message:
+   'Keyless access to Google Maps Platform is deprecated. Please use an APIkey with all your API calls to avoid service interruption. For further details please refer to http://g.co/dev/maps-no-account',  results: [],
+  status: 'OVER_QUERY_LIMIT' }
+PS I:\PROGRAM\Node.js\weather-app> node app.js{ results:
+   [ { address_components: [Array],
+       formatted_address: '1301 Lombard St, Philadelphia, PA 19147, USA',       geometry: [Object],
+       place_id:
+        'EiwxMzAxIExvbWJhcmQgU3QsIFBoaWxhZGVscGhpYSwgUEEgMTkxNDcsIFVTQSIbEhkKFAoSCU38VoEkxsaJEedji1ij51aUEJUK',       types: [Array] } ],  status: 'OK' }
+PS I:\PROGRAM\Node.js\weather-app>
