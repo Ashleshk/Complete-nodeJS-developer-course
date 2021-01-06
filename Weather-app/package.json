@@ -8,7 +8,7 @@
   "author": "Ashlesh",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "got": "^9.2.2",
     "lodash": "^4.17.11",
     "request": "^2.88.0",
